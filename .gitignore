@@ -2,4 +2,4 @@ key.csv
 board.csv
 env
 db.sqlite3
-*__pychace__
+*__pycache__
