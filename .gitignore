@@ -1,3 +1,4 @@
 key.csv
 board.csv
 env
+db.sqlite3
