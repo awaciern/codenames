@@ -6,43 +6,185 @@
   <body>
     <table id="board">
       <tr>
-        <td onclick="reveal()" class="hidden">{{ words.0.text }}</td>
-        <td>{{ words.1.text }}</td>
-        <td>{{ words.2.text }}</td>
-        <td>{{ words.3.text }}</td>
-        <td>{{ words.4.text }}</td>
+        <td>
+          <button id="{{ words.0.position }}" class="hidden"
+          onclick="reveal('{{ words.0.position }}', '{{ words.0.classification }}')">
+            {{ words.0.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.1.position }}" class="hidden"
+          onclick="reveal('{{ words.1.position }}', '{{ words.1.classification }}')">
+            {{ words.1.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.2.position }}" class="hidden"
+          onclick="reveal('{{ words.2.position }}', '{{ words.2.classification }}')">
+            {{ words.2.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.3.position }}" class="hidden"
+          onclick="reveal('{{ words.3.position }}', '{{ words.3.classification }}')">
+            {{ words.3.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.4.position }}" class="hidden"
+          onclick="reveal('{{ words.4.position }}', '{{ words.4.classification }}')">
+            {{ words.4.text }}
+          </button>
+        </td>
       </tr>
       <tr>
-        <td>{{ words.5.text }}</td>
-        <td>{{ words.6.text }}</td>
-        <td>{{ words.7.text }}</td>
-        <td>{{ words.8.text }}</td>
-        <td>{{ words.9.text }}</td>
+        <td>
+          <button id="{{ words.5.position }}" class="hidden"
+          onclick="reveal('{{ words.5.position }}', '{{ words.5.classification }}')">
+            {{ words.5.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.6.position }}" class="hidden"
+          onclick="reveal('{{ words.6.position }}', '{{ words.6.classification }}')">
+            {{ words.6.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.7.position }}" class="hidden"
+          onclick="reveal('{{ words.7.position }}', '{{ words.7.classification }}')">
+            {{ words.7.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.8.position }}" class="hidden"
+          onclick="reveal('{{ words.8.position }}', '{{ words.8.classification }}')">
+            {{ words.8.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.9.position }}" class="hidden"
+          onclick="reveal('{{ words.9.position }}', '{{ words.9.classification }}')">
+            {{ words.9.text }}
+          </button>
+        </td>
       </tr>
       <tr>
-        <td>{{ words.10.text }}</td>
-        <td>{{ words.11.text }}</td>
-        <td>{{ words.12.text }}</td>
-        <td>{{ words.13.text }}</td>
-        <td>{{ words.14.text }}</td>
+        <td>
+          <button id="{{ words.10.position }}" class="hidden"
+          onclick="reveal('{{ words.10.position }}', '{{ words.10.classification }}')">
+            {{ words.10.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.11.position }}" class="hidden"
+          onclick="reveal('{{ words.11.position }}', '{{ words.11.classification }}')">
+            {{ words.11.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.12.position }}" class="hidden"
+          onclick="reveal('{{ words.12.position }}', '{{ words.12.classification }}')">
+            {{ words.12.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.13.position }}" class="hidden"
+          onclick="reveal('{{ words.13.position }}', '{{ words.13.classification }}')">
+            {{ words.13.text }}
+          </button>
+        </td>
+        <td>
+          <button id="{{ words.14.position }}" class="hidden"
+          onclick="reveal('{{ words.14.position }}', '{{ words.14.classification }}')">
+            {{ words.14.text }}
+          </button>
+        </td>
       </tr>
       <tr>
-        <td>{{ words.15.text }}</td>
-        <td>{{ words.16.text }}</td>
-        <td>{{ words.17.text }}</td>
-        <td>{{ words.18.text }}</td>
-        <td>{{ words.19.text }}</td>
-      </tr>
-      <tr>
-        <td>{{ words.20.text }}</td>
-        <td>{{ words.21.text }}</td>
-        <td>{{ words.22.text }}</td>
-        <td>{{ words.23.text }}</td>
-        <td>{{ words.24.text }}</td>
-      </tr>
+        <tr>
+          <td>
+            <button id="{{ words.15.position }}" class="hidden"
+            onclick="reveal('{{ words.15.position }}', '{{ words.15.classification }}')">
+              {{ words.15.text }}
+            </button>
+          </td>
+          <td>
+            <button id="{{ words.16.position }}" class="hidden"
+            onclick="reveal('{{ words.16.position }}', '{{ words.16.classification }}')">
+              {{ words.16.text }}
+            </button>
+          </td>
+          <td>
+            <button id="{{ words.17.position }}" class="hidden"
+            onclick="reveal('{{ words.17.position }}', '{{ words.17.classification }}')">
+              {{ words.17.text }}
+            </button>
+          </td>
+          <td>
+            <button id="{{ words.18.position }}" class="hidden"
+            onclick="reveal('{{ words.18.position }}', '{{ words.18.classification }}')">
+              {{ words.18.text }}
+            </button>
+          </td>
+          <td>
+            <button id="{{ words.19.position }}" class="hidden"
+            onclick="reveal('{{ words.19.position }}', '{{ words.19.classification }}')">
+              {{ words.19.text }}
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button id="{{ words.20.position }}" class="hidden"
+            onclick="reveal('{{ words.20.position }}', '{{ words.20.classification }}')">
+              {{ words.20.text }}
+            </button>
+          </td>
+          <td>
+            <button id="{{ words.21.position }}" class="hidden"
+            onclick="reveal('{{ words.21.position }}', '{{ words.21.classification }}')">
+              {{ words.21.text }}
+            </button>
+          </td>
+          <td>
+            <button id="{{ words.22.position }}" class="hidden"
+            onclick="reveal('{{ words.22.position }}', '{{ words.22.classification }}')">
+              {{ words.22.text }}
+            </button>
+          </td>
+          <td>
+            <button id="{{ words.23.position }}" class="hidden"
+            onclick="reveal('{{ words.23.position }}', '{{ words.23.classification }}')">
+              {{ words.23.text }}
+            </button>
+          </td>
+          <td>
+            <button id="{{ words.24.position }}" class="hidden"
+            onclick="reveal('{{ words.24.position }}', '{{ words.24.classification }}')">
+              {{ words.24.text }}
+            </button>
+          </td>
+        </tr>
     </table>
   </body>
 </html>
 
 <script>
+  function reveal(position, classification) {
+    var css_classification;
+    if (classification == 'R') {
+      css_classification = "red";
+    }
+    else if (classification == 'B') {
+      css_classification = "blue";
+    }
+    else if (classification == 'X') {
+      css_classification = "assasin";
+    }
+    else if (classification == 'N') {
+      css_classification = "neutral";
+    }
+    document.getElementById(position).className = css_classification;
+  }
 </script>
