@@ -38,13 +38,13 @@ class Board(models.Model):
         classifications = [None for i in range(0, 25)]
 
         # Randomly assign 9 blue positions
-        for i in range(0, 10):
+        for i in range(0, 9):
             index = random.randint(0, len(positions) - 1)
             classifications[positions[index]] = 'B'
             positions.remove(positions[index])
 
         # Randomly assign 8 red positions
-        for i in range(0, 9):
+        for i in range(0, 8):
             index = random.randint(0, len(positions) - 1)
             classifications[positions[index]] = 'R'
             positions.remove(positions[index])
@@ -58,8 +58,6 @@ class Board(models.Model):
         for pos in positions:
             classifications[pos] = 'N'
 
-        print(classifications)
-
         # Generate the words and add them to the board
         for i in range(1, 26):
             word = str(Word.objects.order_by('?').first())
@@ -68,5 +66,4 @@ class Board(models.Model):
             board_word = Board.BoardWord.objects.create(text=word,
                                                         classification=classifications[i - 1],
                                                         position=i)
-            print(board_word)
             self.word.add(board_word)
