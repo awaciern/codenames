@@ -28,6 +28,7 @@ class Board(models.Model):
                                            self.classification)
 
     word = models.ManyToManyField(BoardWord)
+    timestamp = models.DateTimeField(default=timezone.now)
 
     # Creates the board wicells.remove(cells[index])th all 25 words
     def generate_words(self):

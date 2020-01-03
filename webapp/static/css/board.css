@@ -2,6 +2,10 @@ button {
   font-size: 3.25vw;
 }
 
+table {
+  font-size: 3.25vw;
+}
+
 .hidden {
   background: #FFFFFF;
 }
@@ -11,7 +15,7 @@ button {
 }
 
 .blue {
-  background: #0000FF;
+  background: #0066ff;
 }
 
 .neutral {
