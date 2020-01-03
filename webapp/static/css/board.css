@@ -1,19 +1,23 @@
+button {
+  font-size: 3.25vw;
+}
+
 .hidden {
-  background: #FFFFFF
+  background: #FFFFFF;
 }
 
 .red {
-  background: #FF0000
+  background: #FF0000;
 }
 
 .blue {
-  background: #0000FF
+  background: #0000FF;
 }
 
 .neutral {
-  background: #FFFF00
+  background: #FFFF00;
 }
 
 .assasin {
-  background: #737373
+  background: #737373;
 }
