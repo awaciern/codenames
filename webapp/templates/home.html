@@ -1,10 +1,18 @@
 {% load static %}
 <html>
   <head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
   </head>
   <body>
     <h1>CODENAMES</h1>
     <h2>
+      {% block content %}
+        <form method="POST" class="post-form">
+          {% csrf_token %}
+          {{ form }}
+          <button type="submit">Generate a New Board</button>
+        </form>
+      {% endblock %}
       <a href="{% url 'guesser' %}">Be a Guesser!</a>
       <br>
       <br>

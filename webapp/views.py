@@ -1,15 +1,23 @@
 from django.shortcuts import render
 from webapp.models import *
+from webapp.forms import BoardForm
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html', {})
+    form = BoardForm()
+
+    # Generate a new board if the new board button is clicked
+    if request.method == 'POST':
+        board = Board.objects.create()
+        board.generate_words()
+
+    return render(request, 'home.html', {'form': form})
 
 
 def guesser(request):
-    # Create a new board for this game
-    board = Board.objects.create()
-    board.generate_words()
+    # Get the most recently generated board
+    latest = Board.objects.latest('timestamp')
+    board = Board.objects.filter(timestamp=latest.timestamp)[0]
 
     return render(request, 'guesser_board.html', {'words': board.word.all()})
 
